@@ -28,14 +28,10 @@ public static void main(String[] args) {
 #### python
 
 ```python
-class EchoEchoEcho:
-    
-    def echo(word: str) -> None:
-        for _ in range(3):
-            print(word + " ")
-            
-word = input()
-EchoEchoEcho.echo(word)
+def echo_echo_echo() -> None:
+    word: str = input()
+    for _ in range(3):
+        print(word + " ")
 ```
 
 #
@@ -74,19 +70,18 @@ public static void main(String[] args) {
 #### python
 
 ```python
-class OddEcho:
-    def main() -> None:
-        lines: List[str] = []
-        while True:
-            try:
-                line = input()
-                lines.append(line)
-            except EOFError:
-                break 
-        N: int = int(lines[0])
-        for i in range(1, N + 1):
-            if i % 2 != 0:
-                print(lines[i])
+def odd_echo() -> None:
+    lines: List[str] = []
+    while True:
+        try:
+            line = input()
+            lines.append(line)
+        except EOFError:
+            break 
+    N: int = int(lines[0])
+    for i in range(1, N + 1):
+        if i % 2 != 0:
+            print(lines[i])
 ```
 #
 ## Problem C - Add Two Numbers
@@ -113,11 +108,10 @@ public static void main(String[] args) {
 #### python
 
 ```python
-class AddTwoNumbers:
-    def add() -> None:
-        chars: List[str] = input().split(' ')
-        a, b = int(chars[0]), int(chars[1])
-        print(a + b)
+def add_two_numbers() -> None:
+    chars: List[str] = input().split(' ')
+    a, b = int(chars[0]), int(chars[1])
+    print(a + b)
 ```
 #
 ## Problem D - N-sum
@@ -146,6 +140,50 @@ public static void main(String[] args) {
         sum += Integer.parseInt(ints[i]);
     }
     System.out.println(sum);
+}
+```
+
+#### python
+
+```python
+def n_sum() -> None:
+    N: int = int(input())
+    ints: List[str] = input().split(' ')
+    sum: int = 0
+    for i in range(N):
+        sum += int(ints[i])
+    print(sum)
+```
+
+#
+## Problem E - Baby Bites
+
+### Input
+
+The first line of input contains an integer $n(1 \leq n \leq 1000)$, the number of bites Arild receives. Then second line contains $n$ space-separated words spoken by Arild, the $i$’th of which is either a non-negative integer $a_i(0 \leq a_i \leq 10000)$ or the string “mumble”.
+
+### Output
+
+If Arild’s counting might make sense, print the string “makes sense”. Otherwise, print the string “something is fishy”.
+
+#### java
+
+```java
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int n = scanner.nextInt();
+    scanner.nextLine();
+    String[] words = scanner.nextLine().split(" ");
+    scanner.close();
+
+    String res = "makes sense";
+    for (int i = 0; i < n; i++) {
+        if (!words[i].equals("mumble") && Integer.parseInt(words[i]) != i + 1) {
+            res = "something is fishy";
+            break;
+        }
+    }
+    System.out.println(res);
 }
 ```
 

@@ -1,8 +1,6 @@
-class EchoEchoEcho:
-    
-    def echo(word: str) -> None:
-        for _ in range(3):
-            print(word + " ")
+def echo_echo_echo() -> None:
+    word: str = input()
+    for _ in range(3):
+        print(word + " ")
             
-word = input()
-EchoEchoEcho.echo(word)
+echo_echo_echo()
