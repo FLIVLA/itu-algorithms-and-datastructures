@@ -38,7 +38,7 @@ word = input()
 EchoEchoEcho.echo(word)
 ```
 
-
+#
 ## Problem B - Odd Echo
 
 ### Input
@@ -88,7 +88,7 @@ class OddEcho:
             if i % 2 != 0:
                 print(lines[i])
 ```
-
+#
 ## Problem C - Add Two Numbers
 
 ### Input
@@ -119,7 +119,7 @@ class AddTwoNumbers:
         a, b = int(chars[0]), int(chars[1])
         print(a + b)
 ```
-
+#
 ## Problem D - N-sum
 
 ### Input
@@ -134,19 +134,19 @@ Output a single integer – the sum of the $N$ integers from the input.
 #### java
 
 ```java
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        scanner.nextLine();
-        String[] ints = scanner.nextLine().split(" ");
-        scanner.close();
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int N = scanner.nextInt();
+    scanner.nextLine();
+    String[] ints = scanner.nextLine().split(" ");
+    scanner.close();
 
-        int sum = 0;
-        for (int i = 0; i < N; i++) {
-            sum += Integer.parseInt(ints[i]);
-        }
-        System.out.println(sum);
+    int sum = 0;
+    for (int i = 0; i < N; i++) {
+        sum += Integer.parseInt(ints[i]);
     }
+    System.out.println(sum);
+}
 ```
 
 #### python
