@@ -1,4 +1,4 @@
-package algo.preparation;
+package algo.exercises.preparation;
 
 import java.util.Scanner;
 import java.util.List;
