@@ -1,6 +1,6 @@
 # Problem A - Disjoint Sets
 
-Maintain a family of disjoint sets, initially the singletons ${0},{1},\dots,{n-1}$ under the following operations:
+Maintain a family of disjoint sets, initially the singletons $ \{0 \} , \{ 1 \} ,\dots, \{ n-1 \}$ under the following operations:
 
 #### 0("query")
 
