@@ -12,7 +12,8 @@ The union operation takes two elements $s$ and $t$ and creates the union of the 
 
 #### 2("move")
 
-The move operation takes two elements $s$ and $t$ and moves the element $s$ into the set containing the element $t$. More precisely, if $s \in S$ and $t \in T$ with $S \not = T$ then $S$ is changed to $S- `\{s\}`$ and $T$ is changed to $T \cup `\{s\}`$. (if $S=T$ then nothing happens)
+The move operation takes two elements $s$ and $t$ and moves the element $s$ into the set containing the element $t$. More precisely, if $s \in S$ and $t \in T$ with $S \not = T$ then $S$ is changed to 
+$S - `\{s\}`$ and $T$ is changed to $T \cup `\{s\}`$. (if $S=T$ then nothing happens)
 
 Note that these operations maintain invariantly that the sets in the family are disjoint.
 
