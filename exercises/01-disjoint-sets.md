@@ -19,8 +19,7 @@ Note that these operations maintain invariantly that the sets in the family are 
 ### Test groups
 
 $$
-\begin{array}{|c|c|c|c|}
-  \hline
+\begin{array}{c c c c }
   \text{Test group} & \text{Points} & \text{Problem size bounds} & \text{Operations} \\
   \hline
   \text{1} & \text{10} & n,m \leq 1000 & \text{0 and 1} \\
