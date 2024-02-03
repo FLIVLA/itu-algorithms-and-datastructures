@@ -190,12 +190,12 @@ public static void main(String[] args) {
 #### python
 
 ```python
-class Nsum:
-    def sum() -> None:
-        N: int = int(input())
-        ints: List[str] = input().split(' ')
-        sum: int = 0
-        for i in range(N):
-            sum += int(ints[i])
-        print(sum)
+def baby_bites() -> None:
+    n: int = int(input())
+    words: List[str] = input().split(' ')
+    res = True
+    for i in range(n):
+        if not words[i] == "mumble" and int(words[i]) != i + 1:
+            res = False
+    print("makes sense" if res else "something is fishy")
 ```
