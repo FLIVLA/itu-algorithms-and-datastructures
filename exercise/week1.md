@@ -8,7 +8,7 @@ Design an algorithm that takes an integer value $N$ as argument and returns the 
 the base-2 logarithm of a number is the exponent to which 2 must be raised to obtain that number. Denoted as $log_2(x)$, where $x$ is the number for which you want to find the logarithm. in mathematical notation:
 
 $$
-log_2(n)=y \leftrightarrow 2^y=x
+log_2(n)=y \Leftrightarrow 2^y=x
 $$
 
 ```java
