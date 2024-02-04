@@ -40,6 +40,8 @@ For each query, write a single line containing 1 or 0 as described above.
 
 ## Solution
 
+This solution does not use path compression, hence the union operation will be $O(n)$, and will only score 20 points, as time limit exeeds for the larger test groups.
+
 ```java
 public class UnionFind {
     
