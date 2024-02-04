@@ -3,7 +3,6 @@ package algo.exercises.week1;
 public class WeekOne {
 
     //#region Exercise 1.1.14
-
     // calculating power of x without math lib
     private static double pow(double x, int power) {
         if (power == 0) return 1;
@@ -39,6 +38,11 @@ public class WeekOne {
         }
         return result;
     }
+
+    //#endregion
+    //#region Exercise 1.5.1
+
+    
 
     //#endregion
 
