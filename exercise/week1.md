@@ -11,8 +11,26 @@ $$
 log_2(x)=y \Longleftrightarrow 2^y=x
 $$
 
-```java
+First, calculating the power of a number without using a math library can be done as follows:
 
+```java
+private static double pow(double N, int power) {
+    if (power == 0) return 1;
+    double result = 1;
+
+    if (power > 0) {
+        while (power != 0) {
+            result *= N;
+            power--;
+        }
+    } else {
+        while (power < 0) {
+            result /= N;
+            power++;
+        }
+    }
+    return result;
+}
 ```
 
 ```python
