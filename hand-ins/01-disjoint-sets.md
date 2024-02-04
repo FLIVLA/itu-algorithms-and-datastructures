@@ -40,7 +40,7 @@ For each query, write a single line containing 1 or 0 as described above.
 
 ## Solution
 
-This solution does not use path compression, hence the union operation will be $O(n)$, and will only score 20 points, as time limit exeeds for the larger test groups.
+This solution does not use path compression, hence the union operation will have a time complexity of $O(n)$, and will only score 20 points, as time limit exeeds for the larger test groups.
 
 ```java
 public class UnionFind {
@@ -112,3 +112,60 @@ public class UnionFind {
     }
 }
 ```
+
+Equivalent python solution for the above java code:
+
+```python
+class UnionFind(object):
+    def __init__(self, n: int) -> None:
+        arr = []
+        for i in range(n):
+            arr.append(i)
+        self.arr = arr
+    
+    def find(self, x: int) -> int:
+        return self.arr[x]
+    
+    def query(self, s: int, t: int) -> None:
+        print(1 if self.arr[s] == self.arr[t] else 0)
+        
+    def union(self, s: int, t: int) -> None:
+        sID, tID = self.find(s), self.find(t)
+        if sID == tID: 
+            return
+        for i in range(len(self.arr)):
+            if self.arr[i] == sID:
+                self.arr[i] = tID
+    
+    def move(self, s: int, t: int) -> None:
+        if self.arr[s] == self.arr[t]:
+            return
+        self.arr[s] = self.arr[t]
+
+def main():
+    fln = input().split(' ')
+    n,m = int(fln[0]), int(fln[1])
+    uf = UnionFind(n)
+    
+    ins = []
+    for i in range(m):
+        str = input().split(' ')
+        ins.append([
+            int(str[0]), 
+            int(str[1]), 
+            int(str[2])
+        ])
+    
+    for i in range(len(ins)):
+        o,s,t = ins[i][0], ins[i][1], ins[i][2]
+        if o == 0: 
+            uf.query(s, t)
+        elif o == 1: 
+            uf.union(s, t)
+        else:
+            uf.move(s, t)
+    
+if __name__ == "__main__":
+    main()
+```
+

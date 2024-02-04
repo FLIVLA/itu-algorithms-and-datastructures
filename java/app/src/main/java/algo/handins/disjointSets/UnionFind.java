@@ -1,4 +1,4 @@
-package algo.handins;
+package algo.handins.disjointSets;
 
 import java.util.Scanner;
 
