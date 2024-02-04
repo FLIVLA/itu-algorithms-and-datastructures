@@ -1,5 +1,7 @@
 package algo.handins.disjointSets;
 
+import java.util.Scanner;
+
 public class UnionFind_wPathCompression {
         
     private int[] arr;
@@ -11,7 +13,10 @@ public class UnionFind_wPathCompression {
         }
     }
 
-    private int find(int x) {
+    private int find(int x) {       // path compression applied here!
+        if (arr[x] != x) {
+            arr[x] = find(arr[x]);
+        }
         return arr[x];
     }
 
