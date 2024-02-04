@@ -5,18 +5,18 @@ public class WeekOne {
     //#region Exercise 1.1.14
 
     // calculating power of x without math lib
-    private static double pow(double N, int power) {
+    private static double pow(double x, int power) {
         if (power == 0) return 1;
         double result = 1;
 
         if (power > 0) {
             while (power != 0) {
-                result *= N;
+                result *= x;
                 power--;
             }
         } else {
             while (power < 0) {
-                result /= N;
+                result /= x;
                 power++;
             }
         }
@@ -29,9 +29,15 @@ public class WeekOne {
      * @return largest integer that is not larger than the base-2 logarithm of N
      */
     public static int lg(int N) {
-        int res = 1;
-
-        return 0;
+        if (N <= 0) {
+            throw new IllegalArgumentException("N must be a positive integer");
+        } 
+        int result = -1;
+        while (N > 0) {
+            N /= 2;
+            result++;
+        }
+        return result;
     }
 
     //#endregion

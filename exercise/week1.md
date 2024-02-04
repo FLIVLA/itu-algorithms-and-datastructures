@@ -33,19 +33,21 @@ private static double pow(double x, int power) {
 }
 ```
 
-The approach above can be applied for calculating the base-2 logarithm of a number. Here `base2Log` is initialized to 0. The while-loop will continue as long as $n > 1$, and for each iteration $n$ is divided by 2, and `base2Log` is incremented by 1, keeping track of how many times $n$ is divided. When $n \leq 1$, the loop teminates.
+#### Solution
+
+The approach above can be applied for calculating the base-2 logarithm of a number. Here `result` is initialized to -1 to handle cases of $N=1$. The while-loop will continue as long as $N > 1$, and for each iteration $n$ is divided by 2, and `result` is incremented by 1, keeping track of how many times $n$ is divided. When $N \leq 1$, the loop teminates.
 
 ```java
-private static int base2Log(int n) {
-    if (n <= 0) {
+public static int lg(int N) {
+    if (N <= 0) {
         throw new IllegalArgumentException("N must be a positive integer");
     } 
-    int base2Log = 0;
-    while (n > 1) {
-        n /= 2;
-        base2Log++;
+    int result = 0;
+    while (N > 1) {
+        N /= 2;
+        result++;
     }
-    return base2Log;
+    return result;
 }
 ```
 
