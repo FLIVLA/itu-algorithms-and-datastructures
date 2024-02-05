@@ -330,7 +330,6 @@ type UnionFind(n: int) =
         if sID <> tID then
             arr.[sID] <- tID 
 
-
     member uf.move(s: int, t: int) =
         let sID: int = uf.find(s)
         let tID: int = uf.find(t)
