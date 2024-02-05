@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vPzegAmVapmve3dFsITVPoAnt40H3ubQvgKvg0EPp0SAau7AOI1/F4A341UMqnGyAyW99sS44G2DJtAy/hPPqQ==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Frederik\\source\\repos\\ITU\\itu-algorithms-and-datastructures\\fsharp\\fsharp.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Frederik\\.nuget\\packages\\fsharp.core\\8.0.101\\fsharp.core.8.0.101.nupkg.sha512"
+  ],
+  "logs": []
+}

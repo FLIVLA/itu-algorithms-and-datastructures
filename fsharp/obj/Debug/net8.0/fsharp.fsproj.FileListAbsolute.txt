@@ -1,0 +1,2 @@
+c:\Users\Frederik\source\repos\ITU\itu-algorithms-and-datastructures\fsharp\obj\Debug\net8.0\fsharp.AssemblyInfoInputs.cache
+c:\Users\Frederik\source\repos\ITU\itu-algorithms-and-datastructures\fsharp\obj\Debug\net8.0\fsharp.AssemblyInfo.fs
