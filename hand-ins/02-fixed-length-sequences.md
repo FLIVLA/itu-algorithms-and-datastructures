@@ -1,4 +1,4 @@
-# Problem A - Atlögur
+# Problem A - Atlögur ⚔️
 
 Guðmundur is a Ph.D. student at an Icelandic university, where he studies history. He has a burning interest in duels and the ways of knights of past times. In the middle ages, and the ages before them, battles between knights were common. His research revolves around these knights and, in particular, he is interested in writing about the most victorious knight.
 
@@ -6,10 +6,7 @@ Guðmundur has found a manuscript describing
 
 knights. In the manuscript, the knights had been ordered by their tendency towards violence. The first knight would therefore challenge the second knight to a battle. The winner of the battle would then challenge the third knight, and so forth. At all moments, there was only one active battle and only two knights participated in each battle.
 
-The knight that made the challenge struck first. When knight
-struck another knight , he reduced the health of the other knight, , by the value of his strength . If the health of the other knight, , was no longer a positive number, then knight had lost and knight
-
-stood victorious. Otherwise, the battle continued and the other knight struck next. The battle continued until one of the knights was victorious, and that knight would continue on to the next battle. All the damage that was done to the knights was permanent, they did not recover between battles.
+The knight that made the challenge struck first. When knight $i$ struck another knight $j$, he reduced the health of the other knight, $h_j$, by the value of his strength $s_i$. If the health of the other knight, $h_j$, was no longer a positive number, then knight $j$ had lost and knight $i$ stood victorious. Otherwise, the battle continued and the other knight struck next. The battle continued until one of the knights was victorious, and that knight would continue on to the next battle. All the damage that was done to the knights was permanent, they did not recover between battles.
 
 There can be only one that stands victorious after all the battles. Which knight will win?
 
@@ -22,7 +19,7 @@ The first line of the input contains one integer $n$, the number of knights, whe
 Output one integer, the index of the knight that stands victorious after all the battles.
 
 
-# Problem B - Coffee Cup Combo
+# Problem B - Coffee Cup Combo ☕
 
 Jonna is a university student who attends
 
