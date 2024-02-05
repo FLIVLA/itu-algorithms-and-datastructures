@@ -82,9 +82,10 @@ A brand new Ultra-CISC microprocessor has a collection of instructions for manip
 CLEAR
 Put a zero into bit
 
-* SET - Put a one into bit
-* OR - Store in bit the logical OR of the contents of bits and
-* AND - Store in bit the logical AND of the contents of bits and .
+* CLEAR $i$ - Put a zero into bit $i$.
+* SET $i$ - Put a one into bit $i$ 
+* OR $i$ $j$ - Store in bit $i$ the logical OR of the contents of bits $i$ and $j$.
+* AND $i$ $j$ - Store in bit $i$ the logical AND of the contents of bits $i$ and $j$.
 
 Your job is to determine the contents of the register after a sequence of these operations. Unfortunately, you don’t know anything about what was in the register before the instructions.
 
