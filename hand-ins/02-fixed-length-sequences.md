@@ -18,10 +18,13 @@ The first line of the input contains one integer $n$, the number of knights, whe
 
 Output one integer, the index of the knight that stands victorious after all the battles.
 
+<br/>
 
 ## Solution
 
 Using recursion to simulate the battles, switching index order passed to battle based on health of $j$ after first strike.
+
+[See Java Solution](../java-solutions/handins/fixedLengthSequences/Atlogur/Atlogur.java)
 
 ```java
 public class Atlogur {
