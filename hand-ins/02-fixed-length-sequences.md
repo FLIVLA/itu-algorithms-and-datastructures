@@ -371,6 +371,79 @@ The first and only line of input contains a single word, the howl of Fenrir. Sin
 
 A valid howl which will win the howling contest.
 
+<br/>
+
+## Solution
+
+```java
+class Howl {
+
+    private int n;
+    private StringBuilder H;
+
+    public Howl(String f) {
+        n = f.length() + 1;
+        H = new StringBuilder();
+    }
+
+    private String superAwesomeHowl() {
+        int lim = n - 3;
+        char next = 'A';
+        for (int i = 0; i < lim; i++) {
+            H.append(next);
+            if (next == 'A') next = 'W';
+            else next = 'A';
+        }
+        H.append('H');
+        for (int i = lim + 1; i < n; i++) {
+            H.append('O');
+        }
+        return H.toString();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String f = scanner.next();
+        scanner.close();
+        Howl howl = new Howl(f);
+        System.out.println(howl.superAwesomeHowl());
+    }
+}
+```
+
+[See Java Solution](../java-solutions/handins/fixedLengthSequences/Howl/Howl.java)
+
+Python solution
+
+```python
+class Howl(object):
+    def __init__(self, h: str):
+        self.n = len(h) + 1
+        self.H = [''] * self.n
+    
+    def super_awesome_howl(self) -> str:
+        lim: int = self.n - 3
+        next = 'A'
+        for i in range(lim):
+            self.H[i] = next
+            if next == 'A':
+                next = 'W'
+            else: next = 'A'
+        self.H[lim] = 'H'
+        for i in range(lim + 1, len(self.H)):
+            self.H[i] = 'O'
+        return "".join(self.H)
+
+def main():
+    h: str = input()
+    howl = Howl(h)
+    print(howl.super_awesome_howl())
+    
+if __name__ == "__main__":
+    main()
+```
+
+[See Python Solution](../python/handins/fixedLengthSequences/Howl/Howl.py)
 
 <br/>
 
