@@ -148,6 +148,74 @@ Print one integer, the maximum number of lectures during which Jonna can stay aw
 ## Solution
 
 ```java
+public class CoffeeCupCombo {
+
+    private int n;
+    private char[] arr;
+    
+    public CoffeeCupCombo(int n, char[] arr) {
+        this.n = n;
+        this.arr = arr;
+    }
+
+    private int maxLectures() {
+        int m = 0, c = 0;               // keep track of the max and coffee count
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == '0') {
+                if (c > 0) {
+                    m++;                // increment maxCount
+                    c--;                // consume 1 cup of coffee
+                }
+            } else {            
+                m++;                    // increment maxCount
+                c = 2;                  // bring lots of coffee
+            }
+        } return m;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.nextLine();
+
+        String s = scanner.nextLine();
+        scanner.close();
+
+        CoffeeCupCombo ccbo = new CoffeeCupCombo(n, s.toCharArray());
+        System.out.println(ccbo.maxLectures());
+    }
+}
+```
+
+Python solution
+
+```python
+class CoffeCupCombo(object):
+    def __init__(self, n: int, arr: []):
+        self.n = n
+        self.arr = arr
+    
+    def max_lectures(self) -> int:
+        m,c = 0,0                       # keep track of the max and coffee count
+        for i in range(self.n):
+            if self.arr[i] == '0':
+                if c > 0:
+                    m += 1              # increment maxCount
+                    c -= 1              # consume 1 cup of coffee
+            else:
+                m += 1                  # increment maxCount
+                c = 2                   # bring lots of coffee
+        return m 
+    
+def main():
+    n: int = int(input())
+    s: str = input()
+    ccbo = CoffeCupCombo(n, list(s))
+    print(ccbo.max_lectures())
+
+if __name__ == "__main__":
+    main()
 ```
 
 <br/>
