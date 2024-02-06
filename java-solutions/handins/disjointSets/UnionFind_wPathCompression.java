@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UnionFind_wPathCompression {
+class UnionFind_wPathCompression {
         
     private int[] arr;
 

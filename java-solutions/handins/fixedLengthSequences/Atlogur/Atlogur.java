@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Atlogur {
+class Atlogur {
     
     private int n;
     private int[] h;

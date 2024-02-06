@@ -43,7 +43,7 @@ For each query, write a single line containing 1 or 0 as described above.
 This solution does not use path compression, hence the union operation will have a time complexity of $O(n)$, and will only score 20 points, as time limit exeeds for the larger test groups.
 
 ```java
-public class UnionFind {
+class UnionFind {
     
     private int[] arr;
 
@@ -172,7 +172,7 @@ if __name__ == "__main__":
 To implement path compression we make each node point directly of its representative element during the find operation. This reduces the depth of the trees in the data structure. The find operation checks if the element is not pointing to itself (which means it is not root), and updates its own pointer to the root. 
 
 ```java
-public class UnionFind_wPathCompression {
+class UnionFind_wPathCompression {
         
     private int[] arr;
 

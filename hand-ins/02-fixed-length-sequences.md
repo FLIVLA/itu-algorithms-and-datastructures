@@ -25,7 +25,7 @@ Output one integer, the index of the knight that stands victorious after all the
 Using recursion to simulate the battles, switching index order passed to `battle(i, j)` based on health of $j$ after first strike.
 
 ```java
-public class Atlogur {
+class Atlogur {
     
     private int n;
     private int[] h;
@@ -147,8 +147,10 @@ Print one integer, the maximum number of lectures during which Jonna can stay aw
 
 ## Solution
 
+This approach will result in a time complexity of $O(n)$ where $n$ is the length of the char array `arr` (number of lectures joanna attends).
+
 ```java
-public class CoffeeCupCombo {
+class CoffeeCupCombo {
 
     private int n;
     private char[] arr;
@@ -187,6 +189,7 @@ public class CoffeeCupCombo {
     }
 }
 ```
+[See Java Solution](../java-solutions/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.java)
 
 Python solution
 
@@ -217,6 +220,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+[See Python Solution](../python/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.py)
 
 <br/>
 
@@ -232,6 +236,79 @@ The first line contains integers $n$ and $k$, with $1 \leq k \leq n \leq 10^5$. 
 
 Display the sequence $x_k,x_2, \dots ,x_{qk}$ where $q=\lfloor \frac nk\rfloor$.
 
+<br/>
+
+## Solution
+
+```java
+class Zoom {
+
+    private int n;
+    private int k;
+    private int[] x;    
+    
+    public Zoom(int n, int k, int[] x) {
+        this.n = n;
+        this.k = k;
+        this.x = x;
+    }
+
+    private void display() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = k - 1; i < n; i += k) {
+            sb.append(x[i]).append(" ");
+        }
+        System.out.println(sb.toString().trim());
+    } 
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String[] fln = scanner.nextLine().split(" ");
+        String[] s = scanner.nextLine().split(" ");
+        scanner.close();
+
+        int n = Integer.parseInt(fln[0]), k = Integer.parseInt(fln[1]);
+        int[] x = new int[n];
+        for (int i = 0; i < n; i++) {
+            x[i] = Integer.parseInt(s[i]); 
+        }
+
+        Zoom z = new Zoom(n, k, x);
+        z.display();
+    }
+}
+```
+
+[See Java Solution](../java-solutions/handins/fixedLengthSequences/Zoom/Zoom.java)
+
+
+```python
+class Zoom(object):
+    def __init__(self, n: int, k: int, x: []):
+        self.n = n
+        self.k = k
+        self.x = x
+    
+    def display(self):
+        res = []
+        for i in range(self.k - 1, self.n, self.k):
+            res.append(str(self.x[i]))
+        print(" ".join(res))
+          
+def main():
+    n,k = map(int, input().split())
+    s = input().split(' ')
+    x = [0] * n
+    for i in range(n):
+        x[i] = int(s[i])
+    z = Zoom(n, k, x)
+    z.display()
+
+if __name__ == "__main__":
+    main()
+```
+
+[See Python Solution](../python/handins/fixedLengthSequences/Zoom/Zoom.py)
 
 <br/>
 

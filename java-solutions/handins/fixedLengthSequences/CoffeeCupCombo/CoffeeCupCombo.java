@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CoffeeCupCombo {
+class CoffeeCupCombo {
 
     private int n;
     private char[] arr;

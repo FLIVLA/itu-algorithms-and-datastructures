@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UnionFind {
+class UnionFind {
     
     private int[] arr;
 
