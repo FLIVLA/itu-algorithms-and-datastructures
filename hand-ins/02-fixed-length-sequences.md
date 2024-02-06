@@ -24,8 +24,6 @@ Output one integer, the index of the knight that stands victorious after all the
 
 Using recursion to simulate the battles, switching index order passed to battle based on health of $j$ after first strike.
 
-[See Java Solution](../java-solutions/handins/fixedLengthSequences/Atlogur/Atlogur.java)
-
 ```java
 public class Atlogur {
     
@@ -82,6 +80,8 @@ public class Atlogur {
     }
 }
 ```
+
+[See Java Solution](../java-solutions/handins/fixedLengthSequences/Atlogur/Atlogur.java)
 
 <br/>
 
