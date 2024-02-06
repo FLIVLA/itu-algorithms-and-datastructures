@@ -1,5 +1,3 @@
-package java.handins.disjointSets;
-
 import java.util.Scanner;
 
 public class UnionFind {

@@ -19,6 +19,69 @@ The first line of the input contains one integer $n$, the number of knights, whe
 Output one integer, the index of the knight that stands victorious after all the battles.
 
 
+## Solution
+
+Using recursion to simulate the battles, switching index order passed to battle based on health of $j$ after first strike.
+
+```java
+public class Atlogur {
+    
+    private int n;
+    private int[] h;
+    private int[] s;
+
+    public Atlogur(int n, int[] h, int[] s) {
+        this.n = n;
+        this.h = h;
+        this.s = s;
+    }
+
+    private void beginBattles() {
+        int i = 0, j = 1;
+        while (j < n) {
+            battle(i, j);
+            if (h[j] > h[i]) {
+                i = j;
+                j++;
+            } else j++;
+        }
+        int w;
+        if (h[i] > 0) {
+            w = i + 1;
+        } else {
+            w = j + 1;
+        }
+        System.out.println(w);
+    }
+
+    private void battle(int i, int j) {
+        h[j] -= s[i];
+        if (h[j] > 0) {
+            battle(j, i);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.nextLine();
+
+        int[] h = new int[n], s = new int[n];
+        for (int i = 0; i < n; i++) {
+            String[] k = scanner.nextLine().split(" ");
+            h[i] = Integer.parseInt(k[0]); 
+            s[i] = Integer.parseInt(k[1]);
+        }
+
+        scanner.close();
+        Atlogur atl = new Atlogur(n, h, s);
+        atl.beginBattles();
+    }
+}
+```
+
+<br/>
+
 # Problem B - Coffee Cup Combo ☕
 
 Jonna is a university student who attends
@@ -38,7 +101,9 @@ The second line contains a string $s$ of length $n$. The $i$’th letter is 1 if
 Print one integer, the maximum number of lectures during which Jonna can stay awake.
 
 
-# Problem C - Zoom
+<br/>
+
+# Problem C - Zoom 🔢
 
 To determine whether your company is successful, your boss has to look at a long list of numbers! So many numbers, in fact, that they need some way to simplify the data. You came up with the idea to summarize the list by “zooming out”. How do you zoom out? Just discard everything except every $k^{th}$ number in the list, for some $k \geq 1$. Now, you just have to implement the idea, and your company will surely be very successful!
 
@@ -51,7 +116,9 @@ The first line contains integers $n$ and $k$, with $1 \leq k \leq n \leq 10^5$. 
 Display the sequence $x_k,x_2, \dots ,x_{qk}$ where $q=\lfloor \frac nk\rfloor$.
 
 
-# Problem D - Howl
+<br/>
+
+# Problem D - Howl 🐺
 
 Returning to the Beautiful Gloomy Outback (BGO) after a strenuous trip to the city, you hear a faint howl in the distance. Instantly you realize it is your friend Fenrir inviting you to a howling contest.
 
@@ -72,7 +139,10 @@ The first and only line of input contains a single word, the howl of Fenrir. Sin
 
 A valid howl which will win the howling contest.
 
-# Problem E - Bit by Bit
+
+<br/>
+
+# Problem E - Bit by Bit 🖳
 
 A brand new Ultra-CISC microprocessor has a collection of instructions for manipulating individual bits of one of its 32-bit registers. The instructions work as described in the following table. In all cases, bit zero is the low-order bit and bit 31 is the high-order bit. The representation of the instruction set makes it impossible to try to manipulate bits outside this range.
 
