@@ -29,6 +29,11 @@
     * [E - Bit by Bit](./hand-ins/02-fixed-length-sequences.md/#problem-e---bit-by-bit-🖳)
         - [Java](./java-solutions/handins/fixedLengthSequences/BitByBit/BitByBit.java)
         - [Python](./python/handins/fixedLengthSequences/BitByBit/BitByBit.py)
+3. [Balance](./hand-ins/03-balance.md)
+4. [Grades](./hand-ins/04-grades.md)
+5. [Seat Allocation](./hand-ins/05-seat-allocation.md)
+6. [Harmony and Conflict](./hand-ins/06-harmony-and-conflict.md)
+7. [Flights](./hand-ins/07-flights.md)
 
 
 <br/>
