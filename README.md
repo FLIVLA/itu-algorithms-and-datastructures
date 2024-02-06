@@ -20,6 +20,16 @@
     * [B - Coffee Cup Combo](./hand-ins/02-fixed-length-sequences.md/#problem-b---coffee-cup-combo-☕)
         - [Java](./java-solutions/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.java)
         - [Python](./python/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.py)
+    * [C - Zoom](./hand-ins/02-fixed-length-sequences.md/#problem-c---zoom-🔢)
+        - [Java](./java-solutions/handins/fixedLengthSequences/Zoom/Zoom.java)
+        - [Python](./python/handins/fixedLengthSequences/Zoom/Zoom.py)
+    * [D - Howl](./hand-ins/02-fixed-length-sequences.md/#problem-d---howl-🐺)
+        - [Java](./java-solutions/handins/fixedLengthSequences/Howl/Howl.java)
+        - [Python](./python/handins/fixedLengthSequences/Howl/Howl.py)
+    * [E - Bit by Bit](./hand-ins/02-fixed-length-sequences.md/#problem-e---bit-by-bit-🖳)
+        - [Java](./java-solutions/handins/fixedLengthSequences/BitByBit/BitByBit.java)
+        - [Python](./python/handins/fixedLengthSequences/BitByBit/BitByBit.py)
+
 
 <br/>
 
