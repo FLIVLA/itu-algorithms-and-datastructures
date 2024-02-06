@@ -22,7 +22,7 @@ Output one integer, the index of the knight that stands victorious after all the
 
 ## Solution
 
-Using recursion to simulate the battles, switching index order passed to battle based on health of $j$ after first strike.
+Using recursion to simulate the battles, switching index order passed to `battle(i, j)` based on health of $j$ after first strike.
 
 ```java
 public class Atlogur {
@@ -83,13 +83,52 @@ public class Atlogur {
 
 [See Java Solution](../java-solutions/handins/fixedLengthSequences/Atlogur/Atlogur.java)
 
+Python solution equivalent to the java code above
+
+```python
+class Atlogur(object):
+    def __init__(self, n: int, h: [], s: []):
+        self.n = n
+        self.h = h
+        self.s = s
+    
+    def begin_battles(self):
+        i, j = 0, 1
+        while j < self.n:
+            self.battle(i, j)
+            if self.h[j] > self.h[i]:
+                i = j
+                j += 1
+            else:
+                j += 1
+        print(i + 1 if self.h[i] > 0 else j + 1) 
+    
+    def battle(self, i: int, j: int):
+        self.h[j] -= self.s[i]
+        if self.h[j] > 0:
+            self.battle(j, i)
+        
+def main():
+    n: int = int(input())
+    H, S = [0] * n, [0] * n 
+    for i in range(n):
+        h, s = map(int, input().split())
+        H[i] = h
+        S[i] = s
+    atl = Atlogur(n, H, S)
+    atl.begin_battles()
+    
+if __name__ == "__main__":
+    main()
+```
+
+[See Python Solution](../python/handins/fixedLengthSequences/Atlogur/Atlogur.py)
+
 <br/>
 
 # Problem B - Coffee Cup Combo ☕
 
-Jonna is a university student who attends
-
-lectures every day. Since most lectures are way too simple for an algorithmic expert such as Jonna, she can only stay awake during a lecture if she is drinking coffee. During a single lecture she needs to drink exactly one cup of coffee to stay awake.
+Jonna is a university student who attends $n$ lectures every day. Since most lectures are way too simple for an algorithmic expert such as Jonna, she can only stay awake during a lecture if she is drinking coffee. During a single lecture she needs to drink exactly one cup of coffee to stay awake.
 
 Some of the lecture halls have coffee machines, so Jonna can always make sure to get coffee there. Furthermore, when Jonna leaves a lecture hall, she can bring at most two coffee cups with her to the following lectures (one cup in each hand). But note that she cannot bring more than two coffee cups with her at any given time.
 
@@ -97,12 +136,19 @@ Given which of Jonna’s lectures have coffee machines, compute the maximum numb
 
 ### Input
 
+The first line contains the integers $n(1 \leq n \leq 10^5)$, the number of lectures Jonna attends.
 The second line contains a string $s$ of length $n$. The $i$’th letter is 1 if there is a coffee machine in the $i$’th lecture hall, and otherwise it is 0.
 
 ### Output
 
 Print one integer, the maximum number of lectures during which Jonna can stay awake.
 
+<br/>
+
+## Solution
+
+```java
+```
 
 <br/>
 

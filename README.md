@@ -16,3 +16,25 @@
 2. [Fixed Length Sequences](./hand-ins/02-fixed-length-sequences.md)
     * [A - Atlögur](./hand-ins/02-fixed-length-sequences.md/#problem-a---atlögur-⚔️)
         - [Java](./java-solutions//handins/fixedLengthSequences/Atlogur/Atlogur.java)
+        - [Python](./python/handins/fixedLengthSequences/Atlogur/Atlogur.py)
+    * [B - Coffee Cup Combo](./hand-ins/02-fixed-length-sequences.md/#problem-b---coffee-cup-combo-☕)
+        - [Java](./java-solutions/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.java)
+        - [Python](./python/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.py)
+
+<br/>
+
+#### Running with provided test cases:
+
+##### Powershell
+
+```ps1
+cd <solutiondir>
+Get-Content <inputFile> | <lang> <solutionFile>
+```
+
+##### bash
+
+```bash
+cd <solutiondir>
+<lang> <solutionFile> < <inputFile>
+```
