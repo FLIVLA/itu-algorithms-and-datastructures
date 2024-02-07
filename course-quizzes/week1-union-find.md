@@ -2,9 +2,9 @@
 
 1. Which of the following is different from the set $\{2,3\}$?
 
-* $ \{2\}\cap\{3\} $
+* $\{2\}\cap\{3\}$
 
-* $ \{2\}\cup\{3\} $
+* $\{2\}\cup\{3\}$
 
 * $ \{2,2,3\} $
 
