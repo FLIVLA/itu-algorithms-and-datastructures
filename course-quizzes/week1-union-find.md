@@ -53,9 +53,9 @@ The correct answer is option 1, $`9\in \{9,2,7\}`$. $1$ does simply not appear i
 
 $$
 \begin{aligned}
-`\{9,2\} &\subset \{9,2,7\} && \text{or}`\\
-`\{9,2\} &\subseteq \{9,2,7\}`\\
-`\{9,2,7\} &\subseteq \{9,2,7\}`\\
+\{9,2\} &\subset \{9,2,7\} && \text{or}\\
+\{9,2\} &\subseteq \{9,2,7\}\\
+\{9,2,7\} &\subseteq \{9,2,7\}\\
 \end{aligned}
 $$
 
