@@ -440,6 +440,8 @@ A valid howl which will win the howling contest.
 
 ## Solution
 
+General approach to the problem is to just alternate 'A' and 'W' over the range $0 \dots n-3$, leaving space to include 'H' and 'O' in all cases.
+
 ```java
 class Howl {
 
