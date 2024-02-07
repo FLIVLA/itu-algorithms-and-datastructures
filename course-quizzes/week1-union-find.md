@@ -52,11 +52,11 @@ The correct anwer is option 1. $`\varnothing \not = \{2,3\}`$. In mathematical s
 The correct answer is option 1, $`9\in \{9,2,7\}`$. $1$ does simply not appear in the set. For option 2 and 3, even though the elements of both sets appear in $`\{9,2,7\}`$, the sets themselves are not part of the set. The correct way to describe sets of 2 and 3 would be
 
 $$
-\begin{aligned}
-`\{9,2\} &\subset \{9,2,7\} && \text{or}`\\
-`\{9,2\} &\subseteq \{9,2,7\}`\\\\
-`\{9,2,7\} &\subseteq \{9,2,7\}`
-\end{aligned}
+`\begin{aligned}
+\{9,2\} &\subset \{9,2,7\} && \text{or}\\
+\{9,2\} &\subseteq \{9,2,7\}\\\\
+\{9,2,7\} &\subseteq \{9,2,7\}
+\end{aligned}`
 $$
 
 #
