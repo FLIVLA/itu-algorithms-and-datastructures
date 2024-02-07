@@ -53,7 +53,7 @@ The correct answer is option 1, $`9\in \{9,2,7\}`$. $1$ does simply not appear i
 
 $$
 \begin{aligned}
-\{9,2\} &\sub \{9,2,7\} && \text{or}\\
+\{9,2\} &\subset \{9,2,7\} && \text{or}\\
 \{9,2\} &\subseteq \{9,2,7\} \\ \\
 
 \{9,2,7\} &\subseteq \{9,2,7\} \\
@@ -62,7 +62,7 @@ $$
 
 #
 
-3. Which of the following is a proper subset ($`\sub`$) of $\{9, 2, 7\}`$ ?
+3. Which of the following is a proper subset ($`\subset`$) of $`\{9, 2, 7\}`$ ?
 
 * $9$ 
 
@@ -74,18 +74,18 @@ $$
 
 #### Review
 
-* $`9 \not \sub \{9,2,7\}`$
+* $`9 \not \subset \{9,2,7\}`$
 
-* $`1 \not \sub \{9,2,7\}`$
+* $`1 \not \subset \{9,2,7\}`$
 
-* $`\{9,2\} \sub \{9,2,7\}`$ ✔️
+* $`\{9,2\} \subset \{9,2,7\}`$ ✔️
 
-* $`\{9,2,7\} \not \sub \{9,2,7\}`$
+* $`\{9,2,7\} \not \subset \{9,2,7\}`$
 
 <br/>
 
-The correct answer is option 3, $`\{9,2\} \sub \{9,2,7\}`$, as every element of $`\{9,2\} `$ appear in $`\{9,2,7\}`$ and $`\{9,2\} \not = \{9,2,7\}`$, making it a proper subset. For option 4, as every element is in both sets violating the criteria for being a proper subset
+The correct answer is option 3, $`\{9,2\} \subset \{9,2,7\}`$, as every element of $`\{9,2\} `$ appear in $`\{9,2,7\}`$ and $`\{9,2\} \not = \{9,2,7\}`$, making it a proper subset. For option 4, as every element is in both sets violating the criteria for being a proper subset
 
 #
 
-4. Which of the following is a subset ( $`\subseteq`$ ) of of $`\{9,2,7\}`$, but not a proper subset ( $`\sub`$ ) ?
+4. Which of the following is a subset ( $`\subseteq`$ ) of of $`\{9,2,7\}`$, but not a proper subset ( $`\subset`$ ) ?
