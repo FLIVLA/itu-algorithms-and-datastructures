@@ -31,6 +31,8 @@
         - [Java](./java-solutions/handins/fixedLengthSequences/BitByBit/BitByBit.java)
         - [Python](./python/handins/fixedLengthSequences/BitByBit/BitByBit.py)
 3. [Balance](./hand-ins/03-balance.md)
+    - [Java](./java-solutions/handins/balance/Balance.java)
+    - [Python](./python/handins/balance/Balance.py)
 4. [Grades](./hand-ins/04-grades.md)
 5. [Seat Allocation](./hand-ins/05-seat-allocation.md)
 6. [Harmony and Conflict](./hand-ins/06-harmony-and-conflict.md)
