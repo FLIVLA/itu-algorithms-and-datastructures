@@ -2,7 +2,7 @@
 
 1. Which of the following is different from the set $\{2,3\}$?
 
-* $`\{2\}\cap\{3\}`$
+* $`\{2\}\cap\{3\}`$ ✔️
 
 * $`\{2\}\cup\{3\}`$
 
@@ -29,7 +29,7 @@ The correct anwer is option 1. $`\varnothing \not = \{2,3\}`$. In mathematical s
 
 2. Which of the following is an element of ($\in$) $`\{9, 2, 7\}`$ ?
 
-* $9$
+* $9$ ✔️
 
 * $1$
 
@@ -63,7 +63,7 @@ $`\{9,2,7\} \subseteq \{9,2,7\}`$
 
 * $1$
 
-* $`\{9,2\}`$
+* $`\{9,2\}`$ ✔️
 
 * $`\{9,2,7\}`$
 
@@ -91,7 +91,7 @@ The correct answer is option 3, $`\{9,2\} \subset \{9,2,7\}`$, as every element 
 
 * $`\{9,2\}`$
 
-* $`\{9,2,7\}`$
+* $`\{9,2,7\}`$ ✔️
 
 #### Review
 
@@ -115,4 +115,64 @@ The correct answer is option 4, as $`\{9,2,7\} = \{9,2,7\}`$ it can't be a prope
 
 * $`\{0, 1, 2, 3, 4, 5\}`$
 
-* $`\{1, 2, 3, 4, 5\}`$
+* $`\{1, 2, 3, 4, 5\}`$ ✔️
+
+<br/>
+
+$0$ is not considered a positive integer, hence option 4 is the correct answer. Option 1 is obviously incorrect as it has infinite negative integers.
+
+#
+
+6. Which of the following statements is true?
+
+* $`\{2,4\}\in\{2,4,6\}`$
+
+* $`\varnothing \subseteq\{2,4,6\}`$ ✔️
+
+* $`2 \subseteq\{2,4,6\}`$
+
+* $`\{2,4,6\} \subset\{2,4,6\}`$
+
+* $`\{2\} \in\{2,4,6\}`$
+
+<br/>
+
+The correct answer is option 2, as $\varnothing$ is a subset of all sets. For 1 and 5, the sets themselves are not in the other set and are therefore false. Option 3 states that $`2 \subseteq\{2,4,6\}`$, however as $2$ is not a set, it cannot be a subset of another set. Option 4, $`\{2,4,6\} \not\subset\{2,4,6\}`$ as $`\{2,4,6\} =\{2,4,6\}`$.
+
+#
+
+7. Which of the following sentences are true for any instance of Union-Find?
+
+* $\forall$ components, $\exists$ exactly one element which refers to itself
+* $\forall$ elements, $\exists$ exactly one element which refers to itself
+* $\forall$ components, $\exists$ at least one element which refers to itself
+* $\forall$ elements, $\exists$ at least one element which refers to itself
+* $\forall$ elements, $\exists$ no elements which refers to itself
+* $\forall$ components, $\exists$ no elements which refers to itself
+* $\forall$ elements, $\exists$ another element which refers to it
+* $\forall$ elements, $\exists$ a component it belongs to
+
+#
+
+8. Give the value printed by the following code fragment:
+
+```java
+int sum = 0;
+for (int i = 1; i < 1000; i++)
+   for (int j = 0; j < i; j++)
+      sum++;
+StdOut.println(sum);
+```
+
+```python
+sum = 0
+i = 1
+while i < 1000:
+    j = 0
+    while j < i:
+        sum += 1
+        j += 1
+    i +=1
+print(sum)
+```
+
