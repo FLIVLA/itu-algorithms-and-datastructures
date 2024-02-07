@@ -84,3 +84,35 @@ The correct answer is option 3, $`\{9,2\} \subset \{9,2,7\}`$, as every element 
 #
 
 4. Which of the following is a subset ( $`\subseteq`$ ) of of $`\{9,2,7\}`$, but not a proper subset ( $`\subset`$ ) ?
+
+* $9$
+
+* $1$
+
+* $`\{9,2\}`$
+
+* $`\{9,2,7\}`$
+
+#### Review
+
+* $`9 \not \subseteq \{9,2,7\}`$
+
+* $`1 \not \subseteq \{9,2,7\}`$
+
+* $`\{9,2\} \subseteq \{9,2,7\}`$, however $`\{9,2\} \subset \{9,2,7\}`$
+
+* $`\{9,2,7\} \subseteq \{9,2,7\}`$, and $`\{9,2,7\} \not \subset \{9,2,7\}`$ ✔️
+
+<br/>
+
+The correct answer is option 4, as $`\{9,2,7\} = \{9,2,7\}`$ it can't be a proper subset, but is indeed a subset.
+
+#
+
+5. Which set is described by the rule $`\{x: x < 6`$, $x$ is a positive integer $`\}`$?
+
+* $`\{\dots, –3, –2, –1, 0, 1, 2, 3, 4, 5\}`$
+
+* $`\{0, 1, 2, 3, 4, 5\}`$
+
+* $`\{1, 2, 3, 4, 5\}`$
