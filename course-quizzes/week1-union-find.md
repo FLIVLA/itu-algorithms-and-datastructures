@@ -2,9 +2,9 @@
 
 1. Which of the following is different from the set $\{2,3\}$?
 
-* $ \{2\} \cap \{3\} $
+* $ \{2\}\cap\{3\} $
 
-* $ \{2\} \cup \{3\} $
+* $ \{2\}\cup\{3\} $
 
 * $ \{2,2,3\} $
 
@@ -27,7 +27,7 @@ The correct anwer is option 1. $\varnothing \not = \{2,3\}$. In mathematical set
 
 #
 
-2. Which of the following is an element of ($\in$) $\{9, 2, 7\}$ ?
+2. Which of the following is an element of ($\in$) $ \{9, 2, 7\} $ ?
 
 * $9$
 
