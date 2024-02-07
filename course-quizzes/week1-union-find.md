@@ -84,8 +84,8 @@ $$
 
 <br/>
 
-The correct answer is option 3, $\{9,2\} \sub \{9,2,7\}$, as every element of $\{9,2\}$ appear in $\{9,2,7\}$ and $\{9,2\}\not = \{9,2,7\}$, making it a proper subset. For option 4, as every element is in both sets violating the criteria for being a proper subset
+The correct answer is option 3, $ \{ 9,2 \} \sub \{ 9,2,7 \} $, as every element of $ \{ 9,2 \} $ appear in $ \{ 9,2,7 \}$ and $ \{ 9,2 \} \not = \{ 9,2,7 \} $, making it a proper subset. For option 4, as every element is in both sets violating the criteria for being a proper subset
 
 #
 
-4. Which of the following is a subset ($\subseteq$) of of $\{9, 2, 7\}$, but not a proper subset ($\sub$) ?
+4. Which of the following is a subset ( $ \subseteq $ ) of of $ \{ 9,2,7 \}$, but not a proper subset ( $ \sub $ ) ?
