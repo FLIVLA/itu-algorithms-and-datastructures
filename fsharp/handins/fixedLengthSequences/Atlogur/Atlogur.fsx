@@ -10,7 +10,7 @@ type Atlogur(n: int, h: int[], s: int[]) =
                 i <- j
                 j <- j + 1
             else j <- j + 1
-        let w =
+        let w: int =
             if h.[i] > 0 then
                 i + 1
             else

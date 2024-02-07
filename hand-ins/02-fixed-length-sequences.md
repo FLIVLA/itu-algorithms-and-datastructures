@@ -1,3 +1,13 @@
+# 02 - Fixed Length Sequences
+
+1. [Problem A - Atlögur](#problem-a---atlögur-⚔️)
+2. [Problem B - Coffee Cup Combo](#problem-b---coffee-cup-combo-☕)
+3. [Problem C - Zoom](#problem-c---zoom-🔢)
+4. [Problem D - Howl](#problem-d---howl-🐺)
+5. [Problem E - Bit by Bit](#problem-e---bit-by-bit-🖳)
+
+<br/>
+
 # Problem A - Atlögur ⚔️
 
 Guðmundur is a Ph.D. student at an Icelandic university, where he studies history. He has a burning interest in duels and the ways of knights of past times. In the middle ages, and the ages before them, battles between knights were common. His research revolves around these knights and, in particular, he is interested in writing about the most victorious knight.
@@ -124,7 +134,7 @@ if __name__ == "__main__":
 
 [See Python Solution](../python/handins/fixedLengthSequences/Atlogur/Atlogur.py)
 
-Bonus F# solution 
+F# solution 
 
 ```fsharp
 type Atlogur(n: int, h: int[], s: int[]) =
@@ -260,6 +270,36 @@ if __name__ == "__main__":
 ```
 [See Python Solution](../python/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.py)
 
+F# solution
+
+```fsharp
+open System
+
+type CoffeeCupCombo(n: int, chars: char[]) =
+    let n: int = n
+    let arr: char[] = chars
+
+    member this.maxLectures(): int =
+        let mutable max: int = 0                    // keep track of the max and coffee count
+        let mutable c: int = 0
+        for i in 0..n-1 do
+            if arr.[i] = '0' then
+                if c > 0 then
+                    max <- max + 1                  // increment maxCount
+                    c <- c - 1                      // consume 1 cup of coffee
+            else
+                max <- max + 1                      // increment maxCount
+                c <- 2                              // bring lots of coffee
+        max
+
+let n: int = Console.ReadLine() |> int
+let chars: char[] = Console.ReadLine().ToCharArray()
+let ccbo: CoffeeCupCombo = CoffeeCupCombo(n, chars)
+printfn "%d" (ccbo.maxLectures())
+```
+
+[See F# Solution](../fsharp/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.fsx)
+
 <br/>
 
 # Problem C - Zoom 🔢
@@ -347,6 +387,31 @@ if __name__ == "__main__":
 ```
 
 [See Python Solution](../python/handins/fixedLengthSequences/Zoom/Zoom.py)
+
+F# solution, using list comprehension instead of looping over $x$.
+
+```fsharp
+open System
+
+type Zoom(n: int, k: int, x: int[]) =
+    let n: int = n
+    let k: int = k
+    let x: int[] = x
+ 
+    member this.display() =
+        let res =
+            [ k-1..k..n-1]                  // generates sequence k-1..n-1 incrementing by k
+            |> List.map (fun i -> x.[i])    // map over x and extract the elements
+            |> List.map string              // convert each element to string
+            |> String.concat " "            
+        printfn "%s" (res.Trim())           // print hele molitjavsen
+
+let fln: int[] = Console.ReadLine().Split() |> Array.map int
+let z = Zoom(fln.[0], fln.[1], Console.ReadLine().Split() |> Array.map int)
+z.display()
+```
+
+[See F# Solution](../fsharp/handins/fixedLengthSequences/Zoom/Zoom.fsx)
 
 <br/>
 
@@ -444,6 +509,35 @@ if __name__ == "__main__":
 ```
 
 [See Python Solution](../python/handins/fixedLengthSequences/Howl/Howl.py)
+
+F# solution, also playing around with list comprehension ⚗️
+
+```fsharp
+open System
+
+type Howl(h: string) =
+    let n: int = h.Length + 1
+    let H: string = ""
+
+    member this.superAwesomeHowl(): string =
+        let lim: int = n - 3
+        let mutable next: char = 'A'
+        let fp: char list = 
+            [0..lim-1]                                          // generate sequence
+            |> List.map (fun _ ->                           
+                let cur = next                                  // store value next in cur
+                next <- if next = 'A' then 'W' else 'A'         // update next based of value of cur
+                cur)                                            // return cur for the list mapping
+        let sp: char list = List.replicate (n - lim - 1) 'O'    // generate 2nd part (O's only)
+        let res: char list = List.append fp ['H'] @ sp          // concatenate fp, 'H' and sp
+        String(res |> List.toArray)                             // convert char list to string and return that satan 
+
+let h = Console.ReadLine()
+let howl = Howl(h)
+printfn "%s" (howl.superAwesomeHowl())
+```
+
+[See F# Solution](../fsharp/handins/fixedLengthSequences/Howl/Howl.fsx)
 
 <br/>
 
