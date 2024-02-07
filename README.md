@@ -1,11 +1,43 @@
 # ITU - Algorithms and Datastructures
 
-### Exercises
+## Exercises
 
 1. [Week 1](./exercise/week1.md)
 2. [Week 2](./exercise/week2.md)
 
-### Hand-ins
+## Hand-ins
+
+Test script templates for testing hand-in solutions with provided test cases. Replace <*> with actual values.
+
+### Powershell
+
+```ps1
+cd <solutiondir>
+Get-Content <inputFile> | <lang> <solutionFile>
+```
+```ps1
+$inFiles = Get-ChildItem -Path . -Filter *.in
+foreach ($file in $inFiles) {
+    Get-Content $file.FullName | <lang> <solutionFile>
+}
+```
+
+### Bash
+```bash
+cd <solutionDir>
+cat <inputFile> | <lang> <solutionFile>
+```
+```bash
+#!/bin/bash
+
+inFiles=$(find . -maxdepth 1 -type f -name "*.in")
+for file in $inFiles; do
+    echo "Test case $file"
+    cat "$file" | <lang> <solutionFile>
+done
+```
+
+<br/>
 
 1. [Disjoint Sets](./hand-ins/01-disjoint-sets.md)
     * [java](./java-solutions/handins/disjointSets/UnionFind.java)
@@ -39,20 +71,6 @@
 7. [Flights](./hand-ins/07-flights.md)
 
 
-<br/>
+<!-- ### Exams
 
-#### Running with provided test cases:
-
-##### Powershell
-
-```ps1
-cd <solutiondir>
-Get-Content <inputFile> | <lang> <solutionFile>
-```
-
-##### bash
-
-```bash
-cd <solutiondir>
-<lang> <solutionFile> < <inputFile>
-```
+1. [May] -->
