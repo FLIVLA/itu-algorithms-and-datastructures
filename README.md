@@ -2,8 +2,23 @@
 
 ## Exercises
 
-1. [Week 1](./exercise/week1.md)
-2. [Week 2](./exercise/week2.md)
+* [Week 1 - Union Find](./exercise/week1.md)
+* [Week 2 - The Basic Data Structure](./exercise/week2.md)
+* [Week 3 - Stacks and Queues]()
+* [Week 4 - Analysis of Algorithms]()
+* [Week 5 - Sorting, Mergesort]()
+* [Week 6 - Priority Queues]()
+* [Week 7 - Graphs, DFS, and BFS]()
+* [Week 8 - Shortest Paths]()
+* [Week 9 - Symbol Tables]()
+* [Week 10 - Search Trees and Tries]()
+* [Week 11 - Amortized Analysis]()
+* [Week 12 - Strings, Radix Sort, and Quicksort]()
+* [Week 13 - MST]()
+
+## Course Quizzes
+
+* [Week 1 - Union Find](./course-quizzes/week1-union-find.md)
 
 ## Hand-ins
 
@@ -53,18 +68,22 @@ done
     * [B - Coffee Cup Combo](./hand-ins/02-fixed-length-sequences.md/#problem-b---coffee-cup-combo-☕)
         - [Java](./java-solutions/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.java)
         - [Python](./python/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.py)
+        - [F#](./fsharp/handins/fixedLengthSequences/CoffeeCupCombo/CoffeeCupCombo.fsx)
     * [C - Zoom](./hand-ins/02-fixed-length-sequences.md/#problem-c---zoom-🔢)
         - [Java](./java-solutions/handins/fixedLengthSequences/Zoom/Zoom.java)
         - [Python](./python/handins/fixedLengthSequences/Zoom/Zoom.py)
+        - [F#](./fsharp/handins/fixedLengthSequences/Zoom/Zoom.fsx)
     * [D - Howl](./hand-ins/02-fixed-length-sequences.md/#problem-d---howl-🐺)
         - [Java](./java-solutions/handins/fixedLengthSequences/Howl/Howl.java)
         - [Python](./python/handins/fixedLengthSequences/Howl/Howl.py)
+        - [F#](./fsharp/handins/fixedLengthSequences/Howl/Howl.fsx)
     * [E - Bit by Bit](./hand-ins/02-fixed-length-sequences.md/#problem-e---bit-by-bit-🖳)
         - [Java](./java-solutions/handins/fixedLengthSequences/BitByBit/BitByBit.java)
         - [Python](./python/handins/fixedLengthSequences/BitByBit/BitByBit.py)
 3. [Balance](./hand-ins/03-balance.md)
     - [Java](./java-solutions/handins/balance/Balance.java)
     - [Python](./python/handins/balance/Balance.py)
+    - [F#](./fsharp/handins/balance/Balance.fsx)
 4. [Grades](./hand-ins/04-grades.md)
 5. [Seat Allocation](./hand-ins/05-seat-allocation.md)
 6. [Harmony and Conflict](./hand-ins/06-harmony-and-conflict.md)
