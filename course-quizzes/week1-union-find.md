@@ -62,7 +62,7 @@ $$
 
 #
 
-3. Which of the following is a proper subset ($`\sub$) of $\{9, 2, 7\}`$ ?
+3. Which of the following is a proper subset ($`\sub`$) of $\{9, 2, 7\}`$ ?
 
 * $9$ 
 
@@ -88,4 +88,4 @@ The correct answer is option 3, $`\{9,2\} \sub \{9,2,7\}`$, as every element of 
 
 #
 
-4. Which of the following is a subset ( $`\subseteq`$ ) of of $`\{9,2,7\}`$, but not a proper subset ( $ \sub`$ ) ?
+4. Which of the following is a subset ( $`\subseteq`$ ) of of $`\{9,2,7\}`$, but not a proper subset ( $`\sub`$ ) ?
