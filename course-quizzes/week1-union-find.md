@@ -260,19 +260,19 @@ print(string1 + " " + string2)
 <br/>
 <br/>
 
-$
+$$
 \begin{array}{c c c c c c c c c}
   \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                     & 7 & 2 & 3 & 3 & 3 & 3 & 7 & 8 \\
 \end{array}
-$
+$$
 
-$
+$$
 \begin{array}{c c c c c c c c c}
   \text{Quick-union} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                      & 7 & 2 & 3 & 3 & 3 & 5 & 7 & 8 \\
 \end{array}
-$
+$$
 
 $`\text{Ordered Set \,\,\,} \{8\},\{7,1\},\{2\},\{6,3,5,4\}`$
 
@@ -287,19 +287,19 @@ $`\text{Disordered Set \,\,\,} \{1,7\},\{2\},\{3,4,5,6\},\{8\}`$
 <br/>
 <br/>
 
-$
+$$
 \begin{array}{c c c c c c c c c}
   \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                     & 1 & 1 & 3 & 1 & 1 & 1 & 7 & 7 \\ 
 \end{array}
-$
+$$
 
-$
+$$
 \begin{array}{c c c c c c c c c}
   \text{Quick-union} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                      & 1 & 1 & 3 & 1 & 4 & 4 & 7 & 7 \\
 \end{array}
-$
+$$
 
 $`\text{Ordered Set \,\,\,} \{3\},\{8,7\},\{1,5,2,4,6\}`$
 
@@ -314,19 +314,19 @@ $`\text{Disordered Set \,\,\,} \{1,2,4,5,6\},\{3\},\{7,8\}`$
 <br/>
 <br/>
 
-$
+$$
 \begin{array}{c c c c c c c c c}
   \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                     & 1 & 7 & 1 & 1 & 1 & 1 & 7 & 8 \\
 \end{array}
-$
+$$
 
-$
+$$
 \begin{array}{c c c c c c c c c}
   \text{Quick-union} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                      & 1 & 7 & 1 & 3 & 3 & 5 & 7 & 8 \\
 \end{array}
-$
+$$
 
 $`\text{Ordered Set \,\,\,} \{8\},\{7,2\},\{4,5,1,3,6\}`$
 
