@@ -566,3 +566,54 @@ Each instruction sequence in the input is to be interpreted independently. You s
 ### Output
 
 For each instruction sequence, print out a line giving the final contents of the register. Print your result in binary, with the most significant bit on the left. Since you don’t know anything about what was in the register before the sequence, you may not be able to determine the values of some bits. Just print a question mark for these bits.
+
+## Solution (work in progress...)
+
+```python
+class BitByBit:
+    def __init__(self):
+        self.lns = []
+    
+    def execute(self, N: int, seq: [str]):
+        reg = ['?' for _ in range(32)]
+        for n in range(N):
+            s = seq[n].split()
+            ins = s[0]
+            i = int(s[1])
+            if ins == "CLEAR":
+                reg[i] = '0'
+            elif ins == "SET":
+                reg[i] = '1'
+            else:
+                j = int(s[2])
+                res = ''
+                for b1, b2 in zip(reg[i], reg[j]):
+                    if b1 == '?' or b2 == '?':
+                        res += '?'
+                    else:
+                        if ins == "OR":
+                            res += str(int(b1) | int(b2)) 
+                        else: 
+                            res += str(int(b1) & int(b2)) 
+                reg[i] = res
+        reg = reg[::-1]
+        self.lns.append("".join(reg))
+    
+    def print_result(self):
+        for i in range(len(self.lns)):
+            print(self.lns[i])
+
+def main():
+    b = BitByBit()
+    n = int(input())
+    while n != 0:
+        seq = [None] * n
+        for i in range(n):
+            seq[i] = input()
+        b.execute(n, seq)
+        n = int(input())
+    b.print_result()
+        
+if __name__ == "__main__":
+    main()
+```
