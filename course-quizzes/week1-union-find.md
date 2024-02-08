@@ -249,6 +249,6 @@ print(string1 + " " + string2)
 
 #
 
-<div style="text-align:center;">
+<div align="center">
   <img src="./svg/w1-1.11-1(1).svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="400">
 </div>
