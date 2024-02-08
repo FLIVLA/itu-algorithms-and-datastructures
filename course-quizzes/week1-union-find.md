@@ -215,11 +215,14 @@ while i < 1000:
 print(sum)
 ```
 
-* a. $10000$
+* a. $10000$ ✔️
 * b. $1000$
 * c. $1000000$
 * d. $100000$
 
+<br/>
+
+Outer loop iterates 10 times, as the value of $i=512$ after the 10th iteration it terminates. The inner loop iterates 1000 times regardless of the value of $i$, resulting in $sum=10000$.
 
 #
 
@@ -238,3 +241,14 @@ string2 = string1
 string1 = "world"
 print(string1 + " " + string2)
 ```
+
+* world hello ✔️
+* hello world
+* hello hello
+* world world
+
+#
+
+<div style="text-align:center;">
+  <img src="./svg/w1-1.11-1(1).svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="400">
+</div>

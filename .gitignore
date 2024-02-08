@@ -1,4 +1,10 @@
 .vscode
+*.pdf
+*.log
+*.fls
+*.aux
+*.fdb_latexmk
+*.gz
 
 # Ignore Gradle project-specific cache directory
 .gradle
