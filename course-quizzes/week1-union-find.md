@@ -176,3 +176,65 @@ while i < 1000:
 print(sum)
 ```
 
+* a. $499500$ ✔️
+* b. $500500$
+* c. $1000000$
+* d. $1000$
+* e. $10000$
+
+This can be calculated using the formula $sum=\frac{n(n+1)}{2}$, with $n=999$.
+
+$$
+\begin{aligned}
+\frac{999\cdot(999+1)}{2} &= \frac{999\cdot(1000)}{2}\\
+&= 499500 
+\end{aligned}
+$$
+
+#
+
+9. Give the value printed by the following code fragment:
+
+```java
+int sum = 0;
+for (int i = 1; i < 1000; i *= 2)
+    for (int j = 0; j < 1000; j++)
+        sum++;
+StdOut.println(sum);
+```
+
+```python
+sum = 0
+i = 1
+while i < 1000:
+    j = 0
+    while j < 1000:
+        sum += 1
+        j += 1
+    i *=2
+print(sum)
+```
+
+* a. $10000$
+* b. $1000$
+* c. $1000000$
+* d. $100000$
+
+
+#
+
+10. What does the following code fragment print?
+
+```java
+String string1 = "hello";
+String string2 = string1;
+string1 = "world";
+StdOut.println(string1 + " " + string2);
+```
+
+```python
+string1 = "hello"
+string2 = string1
+string1 = "world"
+print(string1 + " " + string2)
+```
