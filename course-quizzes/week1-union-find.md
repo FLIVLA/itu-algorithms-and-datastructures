@@ -253,7 +253,7 @@ print(string1 + " " + string2)
 
 <br/>
 
-<div>
+<div align="center">
   <img src="./svg/w1-1.11-1.svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="380">
 </div>
 
@@ -280,7 +280,7 @@ $`\text{Disordered Set \,\,\,} \{1,7\},\{2\},\{3,4,5,6\},\{8\}`$
 
 <br/>
 
-<div>
+<div align="center">
   <img src="./svg/w1-1.11-2.svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="380">
 </div>
 
@@ -307,7 +307,7 @@ $`\text{Disordered Set \,\,\,} \{1,2,4,5,6\},\{3\},\{7,8\}`$
 
 <br/>
 
-<div>
+<div align="center">
   <img src="./svg/w1-1.11-3.svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="380">
 </div>
 
