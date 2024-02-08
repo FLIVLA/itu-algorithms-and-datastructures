@@ -260,7 +260,7 @@ print(string1 + " " + string2)
 <br/>
 
 $$
-\begin{array}{c c c c c c c c c c}
+\begin{array}{c c c c c c c c c}
   \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                     & 7 & 2 & 3 & 3 & 3 & 3 & 7 & 8 \\\\
 
@@ -278,7 +278,7 @@ $$
 <br/>
 
 $$
-\begin{array}{c c c c c c c c c c}
+\begin{array}{c c c c c c c c c }
   \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                     & 1 & 1 & 3 & 1 & 1 & 1 & 7 & 7 \\\\
     \text{Quick-union} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
@@ -295,7 +295,7 @@ $$
 <br/>
 
 $$
-\begin{array}{c c c c c c c c c c}
+\begin{array}{c c c c c c c c c }
   \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
                     & 1 & 7 & 1 & 1 & 1 & 1 & 7 & 8 \\\\
 
