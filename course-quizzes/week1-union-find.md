@@ -249,6 +249,57 @@ print(string1 + " " + string2)
 
 #
 
+11. Below is a drawing of three union-find instances, and 12 descriptions of a union-find instance represented in either set notation, or as `id[]`arrays as a result of either the quick find or quick union implementations of union-find. Drag these 12 descriptions to the drawing of a union-find instance, which they fit. The categories are colour-coded as follows: White: Quick-find Blue: Quick-union Grey: "Ordered" Set Purple: "Disordered" Set.
+
+<br/>
+
 <div align="center">
-  <img src="./svg/w1-1.11-1(1).svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="400">
+  <img src="./svg/w1-1.11-1.svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="380">
 </div>
+
+<br/>
+
+$$
+\begin{array}{c c c c c c c c c c}
+  \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+                    & 7 & 2 & 3 & 3 & 3 & 3 & 7 & 8 \\\\
+
+  \text{Quick-union} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+                    & 7 & 2 & 3 & 3 & 3 & 3 & 7 & 8 \\
+\end{array}
+$$
+
+<br/>
+
+<div align="center">
+  <img src="./svg/w1-1.11-2.svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="380">
+</div>
+
+<br/>
+
+$$
+\begin{array}{c c c c c c c c c c}
+  \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+                    & 1 & 1 & 3 & 1 & 1 & 1 & 7 & 7 \\\\
+    \text{Quick-union} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+                    & 7 & 2 & 3 & 3 & 3 & 3 & 7 & 8 \\
+\end{array}
+$$
+
+<br/>
+
+<div align="center">
+  <img src="./svg/w1-1.11-3.svg" alt="TikZ Diagram" style="display:block; margin:auto;" width="380">
+</div>
+
+<br/>
+
+$$
+\begin{array}{c c c c c c c c c c}
+  \text{Quick-find} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+                    & 1 & 7 & 1 & 1 & 1 & 1 & 7 & 8 \\\\
+
+  \text{Quick-union} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+                     & 7 & 2 & 3 & 3 & 3 & 3 & 7 & 8 \\
+\end{array}
+$$

@@ -1,0 +1,35 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+
+\begin{document}
+\begin{tikzpicture}[
+    node distance=1cm,
+    every node/.style={
+        draw=white,
+        circle,
+        text=white % Set text color to white
+    },
+    every path/.style={
+        draw=white,
+        -latex % Set arrow style to be white
+    }
+]
+    \node[circle,draw](1){1};
+    \node[circle,draw](2) [below left=of 1] {2};
+    \node[circle,draw](4) [below right=of 1] {4};
+    \node[circle,draw](6) [below right=of 4] {6};
+    \node[circle,draw](5) [below left=of 4] {5};
+    \node[circle,draw](3) [below left=of 2] {3};
+    \node[circle,draw](7) [above left=of 3] {7};
+    \node[circle,draw](8) [below left=of 7] {8};
+    \path (1) edge [loop above] (1);
+    \path (3) edge [loop above] (3);
+    \path (7) edge [loop above] (7);
+    \draw[->] (2) -- (1);
+    \draw[->] (4) -- (1);
+    \draw[->] (5) -- (4);
+    \draw[->] (6) -- (4);
+    \draw[->] (8) -- (7);
+\end{tikzpicture}
+\end{document}
