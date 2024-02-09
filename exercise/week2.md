@@ -154,6 +154,9 @@ if __name__ == "__main__":
     main()
 ```
 
+- [Source code - Java](../java-solutions/exercises/week2/StringManipulation.java)
+- [Source code - Python](../python/exercises/week2/StringManipulation.py)
+
 #
 
 ### R2. Sieve

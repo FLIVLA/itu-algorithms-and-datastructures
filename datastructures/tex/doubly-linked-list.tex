@@ -1,0 +1,63 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,fit}
+
+\begin{document}
+\color{white} % Set text color to white
+
+\begin{tikzpicture}[
+    node distance=1cm,
+    mynode/.style={
+        rectangle,
+        draw=white,
+        rounded corners,
+        minimum width=1.5cm,
+        minimum height=0.8cm,
+        text=white
+    },
+    myellipse/.style={
+        rectangle,
+        draw=white,
+        dashed,
+        inner sep=0.4cm
+    }
+]
+    \node[mynode](p1){prev};
+    \node[mynode](1)[right=0cm of p1]{data};
+    \node[mynode](n1)[right=0cm of 1]{next};
+
+    \node[mynode](p2)[right=1.5cm of n1]{prev};
+    \node[mynode](2)[right=0cm of p2]{data};
+    \node[mynode](n2)[right=0cm of 2]{next};
+
+    \node[mynode](p3)[right=1.5cm of n2]{prev};
+    \node[mynode](3)[right=0cm of p3]{data};
+    \node[mynode](n3)[right=0cm of 3]{next};
+
+    \node(h)[below=of p1]{NULL};
+    \node(n)[above=of n3]{NULL};
+
+    \draw[->,>=stealth, line width=1pt, white] (p1) -- (h); 
+
+    \draw[->,>=stealth, line width=1pt, white, out=90, in=90, looseness=0.5] (n1) to (2);
+    \draw[->,>=stealth, line width=1pt, white, out=-90, in=-90, looseness=0.5] (p2) to (1);
+    \draw[->,>=stealth, line width=1pt, white, out=90, in=90, looseness=0.5] (n2) to (3);
+    \draw[->,>=stealth, line width=1pt, white, out=-90, in=-90, looseness=0.5] (p3) to (2);
+
+    \draw[->,>=stealth, line width=1pt, white] (n3) -- (n);
+
+    \node[myellipse, fit=(p1)(1)(n1)](e1) {};
+    \node[myellipse, fit=(p2)(2)(n2)](e2) {};
+    \node[myellipse, fit=(p3)(3)(n3)](e3) {};
+
+    \node(nd1)[below=of e1]{Node};
+    \node(nd2)[below=of e2]{Node};
+    \node(nd3)[below=of e3]{Node};
+
+    \draw[->,>=stealth, line width=1pt, white] (nd1) -- (e1);
+    \draw[->,>=stealth, line width=1pt, white] (nd2) -- (e2);
+    \draw[->,>=stealth, line width=1pt, white] (nd3) -- (e3);
+
+\end{tikzpicture}
+
+\end{document}
