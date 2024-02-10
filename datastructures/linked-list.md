@@ -1,6 +1,6 @@
-# Linked List
+# Linked Lists
 
-### Single Linked List
+### Singly Linked List
 
 Forward navigation only for this variation. Each node is linked to the next, and last node link is NULL.
 
