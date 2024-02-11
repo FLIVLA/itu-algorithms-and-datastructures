@@ -19,6 +19,7 @@
 ## Course Quizzes
 
 * [Week 1 - Union Find](./course-quizzes/week1-union-find.md)
+* [Week 3 - Stacks and Queues](./course-quizzes/week3-stacks-and-queues.md)
 
 ## Hand-ins
 

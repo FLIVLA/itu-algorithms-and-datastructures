@@ -1,0 +1,89 @@
+# Problem B - Union Find
+
+### Input
+
+The first line of input consists of two integers $N$ and $Q$, where $1 \leq N \leq 1000000$ is the number of elements in the base set and $0 \leq Q \leq 1000000$ is the number of operations. Then follow $Q$ lines, one per operation. There are two types of operations:
+
+* “= $a$ $b$” indicate that the sets containing and are joined
+* “? $a$ $b$” is a query asking whether and belong to the same set
+
+In both cases, $a$ and $b$ and are distinct integers between $0$ and $N-1$.
+
+### Output
+
+For each query output a line containing “yes” if
+and are in the same set, and “no” otherwise.
+
+
+## Solution
+
+Gives correct output, but exceeds time limit... wip
+
+```java
+import java.util.Scanner;
+
+class UnionFind {
+    private int[] P;
+    private int[] R;
+
+    public UnionFind(int N) {
+        P = new int[N];
+        R = new int[N];
+
+        for (int i = 0; i < N; i++) {
+            P[i] = i; 
+            R[i] = 0;
+        }
+    }
+
+    public int find(int x) {
+        if (P[x] != x) {
+            P[x] = find(P[x]);
+        }
+        return P[x];
+    }
+
+    public void union(int a, int b) {
+        int aID = find(a), bID = find(b);
+        if (aID != bID) {
+            if (R[aID] < R[bID]) {
+                P[aID] = bID;
+            } else if (R[aID] > R[bID]) {
+                P[bID] = aID;
+            } else {
+                P[aID] = bID;
+                R[bID]++;
+            }
+        }
+    }
+
+    public String query(int a, int b) {
+        return find(a) == find(b) ? "yes" : "no";
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt(), Q = scanner.nextInt();
+        scanner.nextLine();
+        UnionFind uf = new UnionFind(N);
+        
+        String[] ops = new String[Q];
+        for (int i = 0; i < Q; i++) {
+            ops[i] = scanner.nextLine();
+        }
+        scanner.close();
+
+        for (int i = 0; i < Q; i++) {
+            String[] ln = ops[i].split(" ");
+            String o = ln[0];
+            int a = Integer.parseInt(ln[1]), b = Integer.parseInt(ln[2]);
+            if (o.equals("=")) {
+                uf.union(a, b);
+            } else {
+                System.out.println(uf.query(a, b));
+            }
+        }
+    }
+}
+
+```
