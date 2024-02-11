@@ -232,7 +232,7 @@ x.next = t;
 * Removes node x from the list
 * Removes node t from the list
 * Inserts node x immediately after node t
-* Inserts node t immediately after node x
+* Inserts node t immediately after node x ✔️
 
 <br/>
 
