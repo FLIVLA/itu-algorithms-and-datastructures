@@ -20,7 +20,9 @@ public class FixedSizeStack<T> {
 
     public T pop() throws Exception {           // removes top element (decrements t)
         if (t > 0) {
-            return arr[--t];
+            T data = arr[--t];
+            arr[t] = null;
+            return data;
         } else {
             throw new Exception("Stack is empty");
         }

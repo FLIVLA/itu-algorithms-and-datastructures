@@ -157,6 +157,11 @@ if __name__ == "__main__":
 - [Source code - Java](../java-solutions/exercises/week2/StringManipulation.java)
 - [Source code - Python](../python/exercises/week2/StringManipulation.py)
 
+Note:
+
+$String \equiv $ immutable sequence of $char$,
+$Array\equiv$ mutable sequence of $char$
+
 #
 
 ### R2. Sieve
