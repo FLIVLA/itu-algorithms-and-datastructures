@@ -20,6 +20,7 @@
 
 * [Week 1 - Union Find](./course-quizzes/week1-union-find.md)
 * [Week 3 - Stacks and Queues](./course-quizzes/week3-stacks-and-queues.md)
+* [Useful Math 1 (numbers, exponents, logarithms)](./course-quizzes/useful-math-1.md)
 
 ## Hand-ins
 
