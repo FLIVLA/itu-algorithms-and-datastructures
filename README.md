@@ -4,7 +4,7 @@
 
 * [Week 1 - Union Find](./exercise/week1.md)
 * [Week 2 - The Basic Data Structure](./exercise/week2.md)
-* [Week 3 - Stacks and Queues]()
+* [Week 3 - Stacks and Queues](./exercise/week3.md)
 * [Week 4 - Analysis of Algorithms]()
 * [Week 5 - Sorting, Mergesort]()
 * [Week 6 - Priority Queues]()
