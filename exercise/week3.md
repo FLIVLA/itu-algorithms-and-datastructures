@@ -49,3 +49,86 @@ public T peek() {                       // returns top element of the stack
 ```
 
 where `t` is the integer representing the length of the array, `t-1` then points to the position of the top element.
+
+#
+
+### 1.3.19
+
+Explain how you would create a method/function `removeLast()`, that removes
+the last node in a linked list whose first node is stored in the variable first. Making a drawing of what is going on is encouraged
+
+```java
+public void removeLast() {
+    if (head.next == null) {                            // if first node is also the last node
+        head = null;
+        return;
+    }
+    Node<T> prev = head;                                // keep track of previous from current
+    for (Node<T> n = head; n != null; n = n.next) {   
+        if (n.next == null) {
+            prev.next = null;                           // delete current from prev.next
+            return;
+        }
+        prev = n;                                       // set prev to current 
+    }
+}
+```
+
+# 
+
+### 1.3.20
+
+Explain and draw how one could design a method/function `delete()` that
+takes an int argument k and deletes the kth element in a linked list, if it exists.
+
+This solution could of course return some meaningful result.. but this is plenty for demonstrating the technique.
+
+```java
+public void delete(int k) {
+    int i = 0;                                          // assuming list is 0-indexed?
+    for (Node<T> n = head; n != null; n = n.next) {
+        if (i == k - 1 && n.next != null) {             // check if node is to the left of k, and has a next
+            n.next = null;
+            return;
+        } i++;                                      
+    }
+}
+```
+
+#
+
+### 1.3.21
+
+#
+
+### 1.3.22
+
+Suppose that x is a linked list Node. What does the following code fragment do? (This question is also in the quiz, but necessary for the question below)
+
+```java
+t.next = x.next;
+x.next = t;
+```
+
+First next of `t` is set to `x.next`, then `x.next` is set to `t`, which results in node `t` being placed right after node `x` in the linked list.
+
+# 
+
+### 1.3.23
+
+Why does the following code fragment not do the same thing as in the previous question?
+
+```java
+x.next = t;
+t.next = x.next;
+```
+
+Because `x.next` is set to `t` first, resulting `t` having a curcular next reference to itself.
+
+#
+
+### 1.3.27
+
+Suppose that you get a reference for the first node in a linked list. Describe
+how you can find and output the maximum key in the list. Assume that all keys are positive
+integers, and return 0 if the list is empty
