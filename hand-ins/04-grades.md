@@ -33,7 +33,7 @@ The students, one per line, ordered by grade, best students first. Students with
 
 ## Solution
 
-Uses a nested class that is initialized for each input line read.
+Uses a nested class that is initialized for each input line read. I used a hashmap for quickly converting grades to integers, and modifier will be initialized as 0, and if line contains a modifier, is will me set to length/-length depending of it containing `+` or `-`. For the Sorting method, this uses a top-down merge sort algorithm similar to the one found in the course book p. 271-273. Passes all test groups on kattis.
 
 ```java
 public class Grades_mergeSort {
