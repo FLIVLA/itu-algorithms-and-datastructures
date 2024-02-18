@@ -87,6 +87,7 @@ done
     - [Python](./python/handins/balance/Balance.py)
     - [F#](./fsharp/handins/balance/Balance.fsx)
 4. [Grades](./hand-ins/04-grades.md)
+    - [Java](./java-solutions/handins/grades/Grades_mergeSort.java)
 5. [Seat Allocation](./hand-ins/05-seat-allocation.md)
 6. [Harmony and Conflict](./hand-ins/06-harmony-and-conflict.md)
 7. [Flights](./hand-ins/07-flights.md)
