@@ -20,8 +20,7 @@ public class Grades_mergeSort {
             if (a.mod == b.mod)                         // if grades and modifiers are equal, name is compared
                 return b.name.compareTo(a.name) < 1;    
             else return a.mod < b.mod;                  // else we compare modifiers
-        } 
-        else return a.grade < b.grade;                  // else we compare grades
+        } else return a.grade < b.grade;                  // else we compare grades
     }
     
     static void merge(Grade[] arr, int l, int m, int r) {   // similar to segdewick, see p. 271
